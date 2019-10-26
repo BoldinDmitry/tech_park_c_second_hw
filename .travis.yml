@@ -7,12 +7,11 @@ before_install:
 before_script:
   - pip3 install --user cpplint
 
-compiler: clang
 
 script:
-  - cpplint *.c
-  - cppcheck *.c
-  - gcc -g -Wall -Wextra main.c -o main
+  - cpplint main.c
+  - cppcheck main.c
+  - g++ -g -Wall -Wextra main.c -o main
   - mkdir build
   - cd build
   - cmake ..
