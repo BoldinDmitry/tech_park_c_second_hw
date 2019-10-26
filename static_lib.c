@@ -9,7 +9,7 @@
 #include <time.h>
 
 const int* generate_array(int d) {
-    int* arr = malloc(sizeof(int)*d);
+    int* arr = int malloc(sizeof(int)*d);
     for (int i = 0; i < d; ++i) {
 //        Generation of random int from -89(min temp on earth)
 //        to 49(max temp on earth)
